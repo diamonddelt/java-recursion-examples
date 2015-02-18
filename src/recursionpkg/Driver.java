@@ -16,13 +16,21 @@ public class Driver {
 		Scanner scanner = new Scanner(System.in);
 		String selection = scanner.nextLine();
 		
+		selection = selection.toLowerCase();
 		switch (selection) {
-			case "factorial":
+			case ("factorial"):
+				Factorial factorial = new Factorial();
 			
+				System.out.println(factorial.displayProblem());
+				
+				int input = Integer.parseInt(scanner.next());
+				System.out.println(factorial.displaySolution(input));
+				break;
 			default:
 				System.out.println("Please select a supported example.");
+				break;
 		}
 		
+		scanner.close();
 	}
-
 }
