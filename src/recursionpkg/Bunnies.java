@@ -15,7 +15,6 @@ public class Bunnies {
 	 * and 2 ears are added to the returned total
 	 */
 	public int bunnyEars(int bunnies) {
-		
 		if (bunnies == 0) {
 			return 0;
 		}
